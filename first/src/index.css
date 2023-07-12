@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Bacasime Antique", serif;
+  font-family: "Quicksand", sans-serif;
+}
+h1{
+  padding: 15px;
+}
+nav {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+  width: 50%;
+  font-style: italic;
+  justify-content: space-between;
+  list-style: none;
+
+}
