@@ -1,31 +1,23 @@
-import "./App.css";
-import logo from "./logo.svg"
-import {Helmet} from "react-helmet";
 import React from "react";
+import { Navbar } from "react-bootstrap";
+import { Helmet } from "react-helmet";
+import { Banner } from "./component/Banner";
+import { NavBar } from "./component/NavBar";
+
+
+import "./App.css";
+
 function App() {
   return (
-    <nav>
-        <Helmet>
-                <meta charSet="utf-8" />
-                <title>My website</title>
-                <link rel="canonical" href="http://mysite.com/example" />
-                <meta name="description" content="My Website" />
-
-            </Helmet>
-
-      <h1>Seda Mercan</h1>
-      <ul>
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Projects</li>
-        <li>Skills</li>
-        <li>Education</li>
-        <li>Blog</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <div className="App">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>moonchild</title>
+      </Helmet>
+      <NavBar />
+      <Banner />
+    </div>
   );
 }
 
 export default App;
-

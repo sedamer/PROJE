@@ -112,11 +112,11 @@ const Blog = mongoose.model("Blog", blogSchema);
 module.exports = { User, Project, Blog };
 // Örnek verilerin eklenmesi
 const user = new User({
-  name: "John",
-  lastname: "Doe",
-  email: "john@example.com",
-  skills: "React, Node.js",
-  phone: "123456789",
+  name: "Seda",
+  lastname: "Mercan",
+  email: "mrcnsedaa@gmail.com",
+  skills: "React, Node.js, Mongo DB, Javascript, HTML,CSS, Bootstrap, C++",
+  phone: "5442476459",
   education: "Computer Science",
   about: "Lorem ipsum dolor sit amet...",
   experience: "3 years",
