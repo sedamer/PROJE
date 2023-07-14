@@ -134,7 +134,7 @@ const project = new Project({
   projectImage: "project1.jpg"
 });
 
-const blog = new Blog({
+const blog = new Blog({ //bu nesneye veriler veritabanından json olarak gelecek. Veritabanından veri çekme için How to get data from mongodb in react js project. Veritabanına veri kaydetme how to post data to mongo db in react js 
   blogname: "Blog Post 1",
   blogsubject: "React.js",
   blogabout: "Lorem ipsum dolor sit amet...",
