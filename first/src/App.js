@@ -1,8 +1,10 @@
 import React from "react";
-import { Navbar } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { Banner } from "./component/Banner";
 import { NavBar } from "./component/NavBar";
+import { Aboutme } from "./component/Aboutme";
+import { Skills } from "./component/skills";
+import { Education } from "./component/education";
 
 
 import "./App.css";
@@ -16,6 +18,12 @@ function App() {
       </Helmet>
       <NavBar />
       <Banner />
+      <Aboutme/>
+      <Skills/>
+      <Education/>
+
+      
+
     </div>
   );
 }
