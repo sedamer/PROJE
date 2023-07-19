@@ -6,12 +6,14 @@ import navIcon2 from "../assets/images/icons8-instagram.svg";
 import navIcon3 from "../assets/images/icons8-linkedin.svg";
 import navIcon4 from "../assets/images/icons8-gmail-logo.svg";
 import navIcon6 from "../assets/images/icons8-whatsapp.svg";
+import navIcon7 from "../assets/images/icons8-medium.svg";
 
 import logo from "../assets/images/pngegg (3).png";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
+  
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -73,6 +75,16 @@ export const NavBar = () => {
               >
                 About Me
               </Nav.Link>
+              
+              <Nav.Link
+                href="#skills"
+                className={
+                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("skills")}
+              >
+                Skills
+              </Nav.Link>
               <Nav.Link
                 href="#education"
                 className={
@@ -83,15 +95,6 @@ export const NavBar = () => {
                 onClick={() => onUpdateActiveLink("education")}
               >
                 Education
-              </Nav.Link>
-              <Nav.Link
-                href="#skills"
-                className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("skills")}
-              >
-                Skills
               </Nav.Link>
               <Nav.Link
                 href="#projects"
@@ -142,6 +145,10 @@ export const NavBar = () => {
                 </a>
                 <a href="whatsapp://send?phone=+905442476459" target="_blank">
                   <img src={navIcon6} alt="" />
+                </a>
+
+                <a href="https://medium.com/@moonchiild" target="_blank">
+                  <img src={navIcon7} alt="" />
                 </a>
               </div>
             </span>

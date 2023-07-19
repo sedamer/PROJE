@@ -1,11 +1,94 @@
-section.education {
-    position: relative;
-    margin-top: 0;
-    background-image: url("../assets/images/heic1808a.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    padding: 260px 20px 100px 50px; 
-  }
+section.education{
+  position: relative;
+  background-image: url("../assets/images/heic1808aYEN.jpg");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* height: 100vh;  */
+  /* width: 100%;  */
+  /* padding: 50px 10px 50px 30px;  */
+}
+.education-bx {
+  background-color: transparent;
+  text-align: center;
+  padding: 60px 50px;
+}
+
+.education-bx h2 {
+  color: black;
+  font-size: 45px;
+    font-weight: 700;
+    margin-top: 45px;
+}
+.education-bx p {
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 54px 0 75px 0;
+  font-size: 200;
+}
+.item-education {
+  margin: 200px;
+  margin-left:1px;
+  width:140%;
+  height: 350px;
+  border-radius: 4px;
+  background: transparent;
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+  border-radius: 55px;
+}
+
+.item-education p {
+  height: 100%;
+  width: 10px;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all .5s;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.item-education p:hover {
+  flex: 4;
+  box-shadow: 0 0 20px 10px #8D6E97;
+
+}
+
+.item-education p span {
+  min-width: 14em;
+  padding: 5px;
+  text-align: center;
+  transform: rotate(0deg);
+  transition: all .5s;
+  color:black ;
+  letter-spacing: .1em;
+}
+
+.item-education p:hover span {
+  transform: rotate(0);
+}
+.item-education h3{
+  color: black;
+  font-weight: 700;
+  font-style: bold;
+}
+.educationSlider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* .item img{
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 65%;
+  margin-top: 35%;
+} */
+

@@ -5,8 +5,9 @@ import { NavBar } from "./component/NavBar";
 import { Aboutme } from "./component/Aboutme";
 import { Skills } from "./component/skills";
 import { Education } from "./component/education";
-
-
+import { Projects } from "./component/projects";
+import { Blog } from "./component/blog";
+import { Conctact } from "./component/contact";
 import "./App.css";
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
       <Aboutme/>
       <Skills/>
       <Education/>
-
-      
+      <Projects/>
+      <Blog/>
+      <Conctact/>
 
     </div>
   );

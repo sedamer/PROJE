@@ -1,33 +1,39 @@
-section.aboutme {
+.aboutme {
     position: relative;
     margin-top: 0;
     background-image: url("../assets/images/wallpaperflare.com_wallpaper\ \(3\).jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 100%;
-    padding: 260px 20px 100px 50px; 
+    height: 100vh; 
+     width: 100%; 
+    padding: 50px 10px 50px 30px; 
   }
   .aboutme-bx {
     background: transparent;
-    text-align: center;
-    padding: 60px 50px;
-    margin-top: 30%;
-    width:55%;
-  }
-  .aboutme h2 {
+    padding: 30px 50px;
+    margin-top: 10px;
+    position: relative; /* Metni arka planın üzerine getiriyoruz */
+    z-index: 1; /* Metni diğer elementlerin üzerine getiriyoruz */
+
+
+}
+
+.aboutme-bx h2 {
+  text-align: center;
       font-size: 45px;
       font-weight: 700;
+      margin-top: 10px;
   }
-  .aboutme p {
-      color: #B8B8B8;
-      font-size: 18px;
-      letter-spacing: 0.8px;
-      line-height: 1.5em;
-      margin: 14px 0 75px 0;
-      text-align: left;
+  .aboutme-bx p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+    
   }
+
   .aboutmeSlider {
     width: 80%;
     margin: 0 auto;
