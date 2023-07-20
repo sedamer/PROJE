@@ -43,7 +43,16 @@ export const Aboutme = () => {
                 like Aldus PageMaker including versions of Lorem Ipsum.{" "}
               </p>
             </div>
+            
             </div>
+            <Container>
+              <Row>
+                  <Col md={4}>hhhhh</Col>
+                  <Col md={4}>hhhhh</Col>
+                  <Col md={4}>hhhhh</Col>
+              </Row>
+
+            </Container>
             <Carousel
               responsive={responsive}
               infinite={true}

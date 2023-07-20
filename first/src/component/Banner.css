@@ -1,5 +1,3 @@
-
-
 section.banner {
   height: 100vh;
   width: 100%;
@@ -14,8 +12,6 @@ section.banner {
     background-repeat: no-repeat;
 
   }
-
-  
   .banner .tagline {
     font-weight: 700;
     padding: 8px 10px; 
@@ -63,6 +59,10 @@ section.banner {
   .txt-rotate > .wrap {
     border-right: 0.08em solid #666;
   }
+  .wrap{
+    color: #FFFFFF;
+
+  }
   .btn {
     margin-top: 6%;
     display: flex;
@@ -91,6 +91,8 @@ section.banner {
     border-radius: 5rem;
   }
   strong {
+    text-decoration: none;
+
     z-index: 2;
     font-family: 'Avalors Personal Use';
     font-size: 12px;

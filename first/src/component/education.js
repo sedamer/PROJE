@@ -29,44 +29,51 @@ export const Education = () => {
       <Container>
         <Row>
           <Col>
-          <Carousel
+            <Carousel
               responsive={responsive}
               infinite={true}
               className="educationSlider"
             >
-            <div className="education-bx">
-              <h2>Education</h2>
-              <p>
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s,when an unknown printer took a galley of type
-                and scrambled it to make a typespecimen book. It has survived
-                not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged. It was popularised
-                inthe 1960s with the release of Letraset sheets containing Lorem
-                Ipsum passages,and more recently with desktop publishing
-                software like Aldus PageMakerincluding versions of Lorem Ipsum.
-              </p>
-            </div>
+              <div className="education-bx">
+                <h2>Education</h2>
+                <p>
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 1500s,when an unknown printer took a galley of type
+                  and scrambled it to make a typespecimen book. It has survived
+                  not only five centuries, but also the leap into electronic
+                  typesetting, remaining essentially unchanged. It was
+                  popularised inthe 1960s with the release of Letraset sheets
+                  containing Lorem Ipsum passages,and more recently with desktop
+                  publishing software like Aldus PageMakerincluding versions of
+                  Lorem Ipsum.
+                </p>
+              </div>
 
               <div className="item-education">
-                  <span>
-                  <h3>Lise</h3>
-
-                    
-                   <p>Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s,when an unknown printer took a galley of type
-                and scrambled it to make a typespecimen book. It has survived
-                not only five centuries, but also the leap into electronic
-                </p> </span>
-
+                <p>
+                 {/* bootstrap kullan container - row - col */}
 
                   <span>
-                  <h3>Üniversite</h3>
-                    <p>orem Ipsum has been the industry's standard dummy text ever
-                since the 1500s,when an unknown printer took a galley of type
-                and scrambled it to make a typespecimen book. It has survived
-                not only five centuries, but also the leap into electronic</p></span>
-
+                    <p>
+                      Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s,when an unknown printer took a galley
+                      of type and scrambled it to make a typespecimen book. It
+                      has survived not only five centuries, but also the leap
+                      into electronic
+                    </p>{" "}
+                  </span>
+                </p>
+                <p>
+                  <span>
+                    <p>
+                     Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s,when an unknown printer took a galley
+                      of type and scrambled it to make a typespecimen book. It
+                      has survived not only five centuries, but also the leap
+                      into electronic
+                    </p>
+                  </span>
+                </p>
               </div>
             </Carousel>
           </Col>
