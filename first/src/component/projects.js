@@ -1,7 +1,5 @@
-import "../component/projects.css";
-import Carousel from "react-multi-carousel";
 import { Container, Row, Col } from "react-bootstrap";
-import "react-multi-carousel/lib/styles.css";
+import "../component/style.css";
 
 export const Projects = () => {
   const responsive = {
@@ -27,14 +25,11 @@ export const Projects = () => {
     <section className="projects" id="projects">
       <Container>
         <Row>
-          <Col>
-            <Carousel
-              responsive={responsive}
-              infinite={true}
-              className="educationSlider"
-            >
-             <h2>Projects</h2>
-            </Carousel>
+          <Col md={4}>chdcdcjk
+          </Col>
+          <Col md={4}>chdcdcjk
+          </Col>
+          <Col md={4}>chdcdcjk
           </Col>
         </Row>
       </Container>

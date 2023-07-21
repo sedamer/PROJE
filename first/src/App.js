@@ -1,4 +1,6 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import { Helmet } from "react-helmet";
 import { Banner } from "./component/Banner";
 import { NavBar } from "./component/NavBar";
@@ -8,7 +10,7 @@ import { Education } from "./component/education";
 import { Projects } from "./component/projects";
 import { Blog } from "./component/blog";
 import { Conctact } from "./component/contact";
-import "./App.css";
+import "./component/style.css";
 
 function App() {
   return (

@@ -9,11 +9,12 @@ import resim6 from "../assets/images/icons8-express-js.svg"
 import resim7 from "../assets/images/icons8-python.svg"
 import resim8 from "../assets/images/icons8-react-native.svg"
 import resim9 from "../assets/images/icons8-c.svg"
+import {Col,Row,Container} from "react-bootstrap";
+import "../component/style.css"
 
 
 
 
-import "../component/skills.css"
 export const Skills = () => {
     const responsive = {
       superLargeDesktop: {
@@ -37,10 +38,10 @@ export const Skills = () => {
 
     return (
       <section className="skill" id="skills">
-          <div className="container">
-              <div className="row">
-                  <div className="col-12">
-                      <div className="skill-bx wow zoomIn">
+          <Container>
+              <Row>
+                  <Col>
+                      <div className="skill-bx">
                           <h2>Skills</h2>
                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                           <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
@@ -106,9 +107,9 @@ export const Skills = () => {
                               </div>
                           </Carousel>
                       </div>
-                  </div>
-              </div>
-          </div>
+                  </Col>
+              </Row>
+          </Container>
       </section>
     )
   }

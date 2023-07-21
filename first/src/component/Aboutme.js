@@ -1,9 +1,7 @@
 import { Container } from "react-bootstrap";
-import "../component/Aboutme.css";
-import Carousel from "react-multi-carousel";
 import { Row, Col } from "react-bootstrap";
+import "../component/style.css"
 
-import "react-multi-carousel/lib/styles.css";
 
 export const Aboutme = () => {
   const responsive = {
@@ -47,19 +45,13 @@ export const Aboutme = () => {
             </div>
             <Container>
               <Row>
-                  <Col md={4}>hhhhh</Col>
-                  <Col md={4}>hhhhh</Col>
-                  <Col md={4}>hhhhh</Col>
+                  <Col md={4}></Col>
+                  <Col md={4}></Col>
+                  <Col md={4}></Col>
               </Row>
 
             </Container>
-            <Carousel
-              responsive={responsive}
-              infinite={true}
-              className="aboutmeSlider"
-            >
-              <div className="item"></div>
-            </Carousel>
+           
           </Col>
         </Row>
       </Container>

@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import "../component/NavBar.css"
+import "../component/style.css"
 import navIcon1 from "../assets/images/icons8-github (1).svg";
 import navIcon2 from "../assets/images/icons8-instagram.svg";
 import navIcon3 from "../assets/images/icons8-linkedin.svg";
 import navIcon4 from "../assets/images/icons8-gmail-logo.svg";
 import navIcon6 from "../assets/images/icons8-whatsapp.svg";
 import navIcon7 from "../assets/images/icons8-medium.svg";
-
 import logo from "../assets/images/pngegg (3).png";
 
 import { BrowserRouter as Router } from "react-router-dom";
@@ -46,15 +45,9 @@ export const NavBar = () => {
               MOONCHILD
             </div>
           </a>
-          <Navbar.Toggle
-            aria-controls="basic-navbar-nav"
-            className={`navbar-toggle${isOpen ? " open" : ""}`}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <div className="bar"></div>
-          </Navbar.Toggle>
+
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className={`mr-auto{$isOpen && "open"}`}>
+            <Nav>
               <Nav.Link
                 href="#home"
                 className={
