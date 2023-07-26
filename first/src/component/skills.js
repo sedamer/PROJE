@@ -11,6 +11,7 @@ import resim8 from "../assets/images/icons8-react-native.svg"
 import resim9 from "../assets/images/icons8-c.svg"
 import {Col,Row,Container} from "react-bootstrap";
 import "../component/style.css"
+import React from 'react';
 
 
 
@@ -42,7 +43,7 @@ export const Skills = () => {
               <Row>
                   <Col>
                       <div className="skill-bx">
-                          <h2>Skills</h2>
+                          <h2>My Skills</h2>
                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                           <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                               <div className="item">

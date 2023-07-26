@@ -1,31 +1,29 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col ,ListGroup,ListGroupItem} from "react-bootstrap";
 import "../component/style.css";
+import React from 'react';
 
 export const Education = () => {
-
+const educationItems =[
+  { title: "High School", content: "Sular Temel Lisesi | 2015-2019" },
+  { title: "Collage", content: "ADANA ALPARSLAN TÜRKEŞ BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ | Computer Engineering | 100% English | 4/5 | 3.13/4.00|2019-2024" },
+  { title: "Certificate", content: "HACKTRICK'22 EĞİTİM VE KONFEREANS /Web Application Security | SEYTİM(Seyhan Teknoloji Ve İnovasyon Merkezi)- Python | Udemy -100+ Saatlik Komple Frontend Eğitimi- Web Tasarım |BTK Akademi- HTML5 Web Geliştirme/CSS |BTK Akademi-Versiyon Kontrolleri :Git Ve GitHub"}
+];
   return (
     <section className="education" id="education">
       <Container className="education-bx">
-        <h2>Education</h2>
-        <Row>
-          <Col md={4} className="edu">
-            since the 1500s,when an unknown printer took a galley of type and
-            scrambled it to make a typespecimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised inthe 1960s with
-            the release of Letraset sheets containi
-          </Col>
-          <Col md={4} className="edu ">
-            since the 1500s,when an unknown printer took a galley of type and
-            scrambled it to make a typespecimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetti
-          </Col>
-          <Col md={4} className="edu">
-            since the 1500s,when an unknown printer took a galley of type and
-            scrambled it to make a typespecimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popular
-          </Col>
+        <h2>My Education</h2>
+        <p>My Educational Story</p>
+               <Row>
+          {educationItems.map((item, index) => (
+            <Col md={4} className="edu" key={index}>
+              <h3>{item.title}</h3>
+              <ListGroup>
+                {item.content.split('|').map((content, contentIndex) => (
+                  <ListGroupItem key={contentIndex} className="education-kartlar">{content.trim()}</ListGroupItem>
+                ))}
+              </ListGroup>
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>

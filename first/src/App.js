@@ -10,6 +10,7 @@ import { Education } from "./component/education";
 import { Projects } from "./component/projects";
 import { Blog } from "./component/blog";
 import { Conctact } from "./component/contact";
+import {Footer} from "./component/footer"
 import "./component/style.css";
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
       <Projects/>
       <Blog/>
       <Conctact/>
-
+      <Footer/>
     </div>
   );
 }

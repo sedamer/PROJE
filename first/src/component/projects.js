@@ -1,6 +1,7 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button, Card, CardImg } from "react-bootstrap";
 import "../component/style.css";
-
+import kart from "../assets/images/blog.fb8ab7f271a937d5fc01.png";
+import React from 'react';
 export const Projects = () => {
   const responsive = {
     //default
@@ -25,11 +26,51 @@ export const Projects = () => {
     <section className="projects" id="projects">
       <Container>
         <Row>
-          <Col md={4}>chdcdcjk
+          <div>
+          <h2 className="baslik">My Projects</h2>
+          <p className="yazi">Here are a few projects I've worked on recently.</p>
+          </div>
+       
+          <Col md={4}>
+            <Card className="card">
+              <CardImg  variant="top" src={kart}></CardImg>
+              <Card.Body>
+                <Card.Title className="title"> Project 1 </Card.Title>
+                <Card.Text className="text">
+                  since the 1500s,when an unknown printer took a galley of type
+                  and scrambled it to
+                </Card.Text>
+                <button className="buton-project"> <span>See Codes</span></button>
+              </Card.Body>
+            </Card>
           </Col>
-          <Col md={4}>chdcdcjk
+          <Col md={4}>
+            <Card className="card">
+              <CardImg variant="top" src={kart}></CardImg>
+              <Card.Body>
+                <Card.Title className="title"> Project 2 </Card.Title>
+                <Card.Text className="text">
+                  since the 1500s,when an unknown printer took a galley of type
+                  and scrambled it 
+                </Card.Text>
+                <button className="buton-project"> <span>See Codes</span></button>
+
+              </Card.Body>
+            </Card>
           </Col>
-          <Col md={4}>chdcdcjk
+          <Col md={4}>
+            <Card className="card">
+              <CardImg variant="top" src={kart}></CardImg>
+              <Card.Body>
+                <Card.Title className="title"> Project 3 </Card.Title>
+                <Card.Text className="text">
+                  since the 1500s,when an unknown printer took a galley of type
+                  and scrambled it 
+                </Card.Text>
+                <button className="buton-project"> <span>See Codes</span></button>
+
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </Container>

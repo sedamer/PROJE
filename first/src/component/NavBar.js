@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import "../component/style.css"
+
 import navIcon1 from "../assets/images/icons8-github (1).svg";
 import navIcon2 from "../assets/images/icons8-instagram.svg";
 import navIcon3 from "../assets/images/icons8-linkedin.svg";
@@ -42,7 +43,7 @@ export const NavBar = () => {
             {" "}
             <div className="navbar-toggler-icon">
               <img src={logo} alt=""></img>
-              MOONCHILD
+              <p>MOONCHILD</p>
             </div>
           </a>
 

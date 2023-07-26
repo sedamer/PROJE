@@ -79,8 +79,12 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
     position: absolute;
     left: -15px;
     top: -2px;
-    color: #FFFFFF;    
   
+  }
+  .navbar-toggler-icon p{
+    color: #FFFFFF;    
+    letter-spacing: 3px;
+
   }
 /* **************BANNER CSS***************** */
 section.banner {
@@ -90,7 +94,7 @@ section.banner {
     position: relative;
     margin-top: 0;
     padding: 260px 20px 100px 50px;
-    background-image: url("../assets/images/wallpaperflare.com_wallpaper.jpg");
+    background-image: url("../assets/images/heic0910h\ \(1\).jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -299,7 +303,7 @@ section.banner {
 .aboutme {
     position: relative;
     margin-top: 0;
-    background-image: url("../assets/images/heic1501a\ \(1\).jpg");
+    background-image: url("../assets/images/heic1307a\ \(1\).jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -315,11 +319,12 @@ section.banner {
 }
 
 .aboutme-bx h2 {
-    text-align: center;
-    font-size: 45px;
-    font-weight: 700;
-    margin-top: 10px;
-    color: #B8B8B8;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top:25px;
+  letter-spacing: 3px;
+  font-size: 38px;
+  margin-top: 65px;
 
   } 
   .aboutme-bx p {
@@ -349,9 +354,12 @@ section.banner {
       padding: 60px 50px;
     }
     .skill h2 {
-        font-size: 45px;
-        font-weight: 700;
-        color: #FFFFFF;
+      text-align: center;
+      color: #FFFFFF;
+      margin-top:25px;
+      letter-spacing: 3px;
+      font-size: 38px;
+      margin-top: 65px;
 
     }
     .skill p ,h5 {
@@ -387,7 +395,7 @@ section.banner {
 
     section.education{
         position: relative;
-        background-image: url("../assets/images/heic1808aYEN.jpg");
+        background-image: url("../assets/images/nasa--hI5dX2ObAs-unsplash\ \(1\).jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -398,14 +406,22 @@ section.banner {
         background-color: transparent;
         text-align: center;
         padding: 60px 50px;
+
       }
       
       .education-bx h2 {
+        text-align: center;
         color: #FFFFFF;
-        font-size: 45px;
-        font-weight: 700;
-        margin-top: 45px;
+        margin-top:25px;
+        letter-spacing: 3px;
+        font-size: 38px;
+        margin-top: 65px;
       }
+        .education-bx p{
+          color: #FFFFFF;
+          text-align: center;
+        }
+      
       .edu {
         color: #FFFFFF;
         font-size: 18px;
@@ -413,55 +429,296 @@ section.banner {
         line-height: 1.5em;
         margin: 54px 0 75px 0;
         font-size: 200;
+   
+
       }
+      .education-kartlar{
+        background-color: transparent;
+        color:white  !important;    
       
-  
+      }
+
           /* ************PROJECTS CSS************ */
 
-          section.projects{
+        section.projects{
   
-            position: relative;
-            background-image: url("../assets/images/heic2007a\ \(yni\).jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-            height: 100vh;
-
+          position: relative;
+          background-image: url("../assets/images/heic1808aYEN.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          width: 100%;
+          height: 100vh;
+            
+            
            
     }
+      .card{
+        width: 18rem;
+        padding-top: 25%;  
+        background-color: transparent;
+        margin-top: 45px;
+        
+      }
+      .card{
+        border-radius: 48px;
+            }
+      .title{
+        text-align: center;
+        color: #FFFFFF;
+      }
 
+      .text{
+        color:#FFFFFF;
+      }
+      .baslik{
+        text-align: center;
+        color: #FFFFFF;
+        letter-spacing: 3px;
+        font-size: 38px;
+        margin-top: 6%;
+      }
+      .yazi{
+        color: #FFFFFF;
+        text-align: center;
+      }
+      
+      .buton-project {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 8px;
+        width: 130px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        margin-left: 55px;
+       }
+       
+       .buton-project span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+       }
+       
+       .buton-project span:after {
+        content: '»';
+        position: absolute;
+        top: 0;
+        right: -15px;
+        transition: 0.5s;
+       }
+       
+       .buton-project:hover span {
+        padding-right: 15px;
+       }
+       
+       .buton-project:hover span:after {
+        opacity: 1;
+        right: 0;
+       }
 
           /* ************Blog CSS************ */
-          section.blog {
-            position: relative;
-            background-image: url("../assets/images/heic1608YENİ.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-            height: 100vh;
+            section.blog {
+              position: relative;
+              background-image: url("../assets/images/heic1608YENİ.jpg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              width: 100%;
+              height: 100vh;
 
-        }
+          }
+            .baslikblog{
+              text-align: center;
+              color: #FFFFFF;
+              margin-top:25px;
+              letter-spacing: 3px;
+              font-size: 38px;
+              margin-top: 6%;
 
+            }
+            .blogcard img{
+              transition: box-shadow 0.3s ease-in-out;
+            }
+            .blogcard:hover{
+              box-shadow: 0 0 20px 10px #A9C3DA;
+            }
+            
+            .yaziblog{
+              color: #FFFFFF;
+              text-align: center;
+            }
+            .blogcard{
+              border-radius: 24px;
+              margin-top: 50px;
+            }
+            .kart-title{
+              color: #FFFFFF;
+            }
+            .popup1{
+              backdrop-filter: blur(8px);
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              margin: auto;
+              width: 80%;
+              height: 80%;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              padding: 20px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);         
+              border-radius: 24px;
+            
+            }
+            .popup1 p{
+              margin: 20px;
+              padding: 20px;
+              color: #fff;
+              
+            }
+            .popup1 h2 {
+              margin-left: 35px;
+            }
+            .popup2{
+              width: 80%;
+              margin:120px;
+              margin-left: 50px;
+            }
+            .blog-img-card{
+              border-radius: 24px;
+            }
+            .blog-button-popup  {
+              align-items: center;
+              background-color: transparent;
+              color: #fff;
+              cursor: pointer;
+              display: flex;
+              text-decoration: none;
+              text-transform: uppercase;
+              outline: 0;
+              border: 0;
+              padding: 1rem;
+            }
+            
+            .blog-button-popup:before {
+              content: "";
+              display: inline-block;
+              height: 1px;
+              margin-right: 10px;
+              transition: all .42s cubic-bezier(.25,.8,.25,1);
+              width: 0;
+            }
+            
+            .blog-button-popup:hover:before {
+              background-color: #fff;
+              width: 3rem;
+            }
+            
           /* ************contact CSS************ */
+      section.contact{
+        position: relative;
+        background-image: url("../assets/images/heic0817a\ \(yeni\).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        
+    }
+      .iletisim h2{
+        color: #FFFFFF;
+        font-size: 90px;
+        font-weight: 90px;
+        margin-top: 40%;
+        
+      }
 
-
-
-    section.contact{
-      position: relative;
-      background-image: url("../assets/images/heic0817a\ \(yeni\).jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: 100vh;
-      
-  }
-  .iletisim h2{
-    color: #FFFFFF;
-    font-size: 90px;
-    font-weight: 90px;
-    margin-top: 40%;
-    
-  }
+      .form{
+        margin-top: 30%;
+      }
+      .label ,h3{
+        color: #FFFFFF;
+      }
+  
+      .contact-buton {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        line-height: 15px;
+        text-decoration: none;
+        cursor: pointer;
+        background: transparent;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        border-radius: 12px;
+        padding: 15px;
+        width: 150px;
+        margin-left: 450px;
+       }
+       .text-contact{
+        color:#FFFFFF;
+       }
+       .contact-buton span:first-child {
+        position: relative;
+        transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+       }
+       
+      .contact-buton span:last-child {
+        color: white;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+        z-index: 100;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translateY(225%) translateX(-50%);
+        height: 14px;
+        line-height: 13px;
+       }
+       
+       .contact-buton:after {
+        content: "";
+        position: absolute;
+        bottom: -50%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        transform-origin: bottom center;
+        transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+        transform: skewY(9.3deg) scaleY(0);
+        z-index: 50;
+       }
+       
+       .contact-buton:hover:after {
+        transform-origin: bottom center;
+        transform: skewY(9.3deg) scaleY(2);
+       }
+       
+       .contact-buton:hover span:last-child {
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 1;
+        transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+       }
+      /* FOOTER CSS */
+      footer.footer{
+        background-color:#130F10;
+      }
+.footerbaslik{
+  color: #FFFFFF;
+  letter-spacing: 3px;
+  margin-left: -140px;
+font-size:medium;
+}
+.footeryazi{
+  color: #FFFFFF;
+}

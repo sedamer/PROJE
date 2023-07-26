@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../component/style.css"
+import React from 'react';
+
 import HeaderImg from "../assets/images/moon-g1e7392477_1280.png";
 export const Banner = () => {
   const toRotate = [" I'm Seda Mercan. Junior Frontend Web Developer, Collage Student "];
