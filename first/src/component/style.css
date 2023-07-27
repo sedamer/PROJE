@@ -432,6 +432,10 @@ section.banner {
    
 
       }
+      .imgeedu{
+        width: 25px;
+        border: none;
+      }
       .education-kartlar{
         background-color: transparent;
         color:white  !important;    
@@ -584,6 +588,11 @@ section.banner {
             }
             .popup1 h2 {
               margin-left: 35px;
+              color: #fff;
+            }
+            .popup1 h4{
+              color: #fff;
+              margin-left: 1100px;
             }
             .popup2{
               width: 80%;
@@ -640,7 +649,8 @@ section.banner {
       }
 
       .form{
-        margin-top: 30%;
+        margin-top: 25%;
+        padding: 25px;
       }
       .label ,h3{
         color: #FFFFFF;
@@ -709,16 +719,26 @@ section.banner {
         opacity: 1;
         transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
        }
+
       /* FOOTER CSS */
       footer.footer{
         background-color:#130F10;
       }
-.footerbaslik{
-  color: #FFFFFF;
-  letter-spacing: 3px;
-  margin-left: -140px;
-font-size:medium;
-}
-.footeryazi{
-  color: #FFFFFF;
-}
+    .footerbaslik{
+      color: #FFFFFF;
+      letter-spacing: 3px;
+      margin-left: -140px;
+    font-size:medium;
+    }
+    .footeryazi{
+      color: #FFFFFF;
+    }
+
+
+    .imgCont{
+      width:30px;
+    }
+    .footercontyazi{
+      color: #fff;
+      margin-left: 50px;
+    }

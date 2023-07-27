@@ -17,15 +17,15 @@ export const Conctact = () => {
 
               <Form.Group className="mb-3">
                 <Form.Label className="label">Name</Form.Label>
-                <Form.Control type="text"></Form.Control>
+                <Form.Control type="text-con-mesaj"></Form.Control>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label className="label">LastName</Form.Label>
-                <Form.Control type="text"></Form.Control>
+                <Form.Control type="text-con-mesaj"></Form.Control>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label className="label">E-mail</Form.Label>
-                <Form.Control type="text"></Form.Control>
+                <Form.Control type="text-con-mesaj"></Form.Control>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label className="label">Message</Form.Label>

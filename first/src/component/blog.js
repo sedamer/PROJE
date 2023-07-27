@@ -69,6 +69,7 @@ export const Blog = () => {
                               software lik of Lorem Ipsum.
                             </p>
                           </div>
+                        <h4>27.07.2023</h4>
                         </Col>
 
                         <Col md={6}>
