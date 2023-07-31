@@ -1,8 +1,27 @@
 import { Container, Row, Col, ListGroup, ListGroupItem } from "react-bootstrap";
 import "../component/style.css";
 import React from "react";
-
+import edusvg from  "../assets/images/graduation-cap-icon.svg";
 export const Education = () => {
+  const responsive = {
+    //default
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
   const educationItems = [
     { title: "High School", content: "Sular High School | 2015-2019" },
     {
@@ -24,7 +43,12 @@ export const Education = () => {
         <Row>
           {educationItems.map((item, index) => (
             <Col md={4} className="edu" key={index}>
-              <h3>{item.title}</h3>
+             <div className="education-item">
+                <div className="icon-with-title">
+                  <img src={edusvg} alt={item.title} />
+                  <h3>{item.title}</h3>
+                </div>
+              </div>
               <ListGroup>
                 {item.content.split("|").map((content, contentIndex) => (
                   <ListGroupItem

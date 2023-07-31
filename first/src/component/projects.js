@@ -40,7 +40,9 @@ export const Projects = () => {
                   since the 1500s,when an unknown printer took a galley of type
                   and scrambled it to
                 </Card.Text>
+                <a href="https://github.com/sedamer/BrickBreakerGame-OpenGL" target="_blank">
                 <button className="buton-project"> <span>See Codes</span></button>
+                </a>
               </Card.Body>
             </Card>
           </Col>
@@ -53,7 +55,9 @@ export const Projects = () => {
                   since the 1500s,when an unknown printer took a galley of type
                   and scrambled it 
                 </Card.Text>
+                <a href="https://github.com/sedamer/BrickBreakerGame-WinBGIm" target="_blank">
                 <button className="buton-project"> <span>See Codes</span></button>
+                </a>
 
               </Card.Body>
             </Card>
@@ -67,8 +71,9 @@ export const Projects = () => {
                   since the 1500s,when an unknown printer took a galley of type
                   and scrambled it 
                 </Card.Text>
+                <a href="https://github.com/sedamer/BrickBreakerGame-MinGW" target="_blank">
                 <button className="buton-project"> <span>See Codes</span></button>
-
+                </a>
               </Card.Body>
             </Card>
           </Col>

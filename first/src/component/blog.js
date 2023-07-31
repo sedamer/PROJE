@@ -13,6 +13,25 @@ import web from "../assets/images/web-3-0-nedir-ozellikleri-neler150804_3.jpg";
 import iki from "../assets/images/1_odW0CyTVxMVt5s3yhjjOhw.png"
 import uc from "../assets/images/secure-rest-api-in-nodejs-18f43b3033c239da5d2525cfd9fdc98f.png"
 export const Blog = () => {
+  const responsive = {
+    //default
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
   return (
     <section className="blog" id="blog">
       <Container>
