@@ -32,22 +32,19 @@ export const Conctact = () => {
           </Col>
           <Col md={6}>
             <Form className="form">
-              <h3>Contact me!</h3>
+              <h3 className="contactme">Get In Touch With Me!</h3>
 
               <Form.Group className="mb-3">
-                <Form.Label className="label">Name</Form.Label>
+                <Form.Label className="label">Your Full Name</Form.Label>
+                <Form.Control type="text-con-mesaj"></Form.Control>
+              </Form.Group>
+
+              <Form.Group className="mb-3">
+                <Form.Label className="label">Your E-mail</Form.Label>
                 <Form.Control type="text-con-mesaj"></Form.Control>
               </Form.Group>
               <Form.Group className="mb-3">
-                <Form.Label className="label">LastName</Form.Label>
-                <Form.Control type="text-con-mesaj"></Form.Control>
-              </Form.Group>
-              <Form.Group className="mb-3">
-                <Form.Label className="label">E-mail</Form.Label>
-                <Form.Control type="text-con-mesaj"></Form.Control>
-              </Form.Group>
-              <Form.Group className="mb-3">
-                <Form.Label className="label">Message</Form.Label>
+                <Form.Label className="label">Your Message</Form.Label>
                 <Form.Control as="textarea" rows={3} />
               </Form.Group>
 

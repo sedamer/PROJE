@@ -20,6 +20,7 @@ nav.navbar {
     z-index: 1;
     transition: 0.32s ease-in-out;
     word-spacing: 50pc;
+    letter-spacing: 0.2pc;
     margin-top: 10px;
 }
 
@@ -31,19 +32,20 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   opacity: 1;
   margin-left:5%;
   text-decoration: none;
-  display: inline; 
+  display: inline; /* ya da istediğiniz stil */
+
   margin-right: 10px;
 }
+
   span.navbar-text {
     display: flex;
     align-items: center;
   }
-.navbar-toggle{
+/* .navbar-toggle{
     display: none;
-}
+} */
   .social-icon {
     margin-top: 40%;
-    margin-left: 92%;
     display: grid;
     position: absolute;
     right:4%;
@@ -70,9 +72,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   }
   .social-icon a:hover img {
     transform: scale(0.9);
-    fill: #333333;
   }
-  .navbar-toggler-icon{
+  .navbar-icon{
     width: 5%;
     padding: 1%;
     margin-left: 1%;
@@ -81,11 +82,12 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
     top: -2px;
   
   }
-  .navbar-toggler-icon p{
+  .navbar-icon p{
     color: #FFFFFF;    
     letter-spacing: 3px;
 
   }
+
 /* **************BANNER CSS***************** */
 section.banner {
     height: 100vh;
@@ -151,14 +153,13 @@ section.banner {
       width: 13rem;
       height: 3rem;
       background-size: 300% 300%;
-      backdrop-filter: blur(1rem);
+      backdrop-filter: blur(0.8rem);
       border-radius: 5rem;
       transition: 0.5s;
       animation: gradient_301 5s ease infinite;
       border: double 4px transparent;
       background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
-      background-origin: border-box;
-      background-clip: content-box, border-box;
+      
       
     }
     #container-stars {
@@ -210,9 +211,6 @@ section.banner {
       background-origin: border-box;
       background-clip: content-box, border-box;
       animation: none;
-    }
-    .btn:active .circle {
-      background: #FE53BB;
     }
     #stars {
       position: relative;
@@ -336,7 +334,9 @@ section.banner {
     margin: 14px 0 75px 0;
   }
 
-
+.aboutmeyazi{
+  text-align: center;
+}
 
   /* ************SKILLS CSS************ */
 
@@ -432,9 +432,12 @@ section.banner {
         line-height: 1.5em;
         margin: 54px 0 75px 0;
         font-size: 200;
-   
-
       }
+       .edubaslikk {
+        margin:30px ;
+   } 
+
+      
       .imgeedu{
         width: 25px;
         border: none;
@@ -742,8 +745,12 @@ section.banner {
         opacity: 1;
         transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
        }
-
+      .contactme{
+      letter-spacing: 3px;
+      
+      }
       /* FOOTER CSS */
+
       footer.footer{
         background-color:#130F10;
       }
@@ -768,5 +775,3 @@ section.banner {
       text-align: center;
     }
      
-/* Scroll Up Button Css Kodu */
-

@@ -16,7 +16,6 @@ export const NavBar = () => {
   
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
@@ -39,14 +38,16 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
+
+
           <a href="#home">
             {" "}
-            <div className="navbar-toggler-icon">
+            <div className="navbar-icon">
               <img src={logo} alt=""></img>
               <p>MOONCHILD</p>
             </div>
           </a>
-
+          <Navbar.Toggle aria-controls ="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
               <Nav.Link
@@ -61,6 +62,7 @@ export const NavBar = () => {
               </Nav.Link>
               <Nav.Link
                 href="#aboutme"
+               
                 className={
                   activeLink === "aboutme"
                     ? "active navbar-link"

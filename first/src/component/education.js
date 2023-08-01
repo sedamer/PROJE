@@ -38,8 +38,8 @@ export const Education = () => {
   return (
     <section className="education" id="education">
       <Container className="education-bx">
-        <h2>My Education</h2>
-        <p>My Educational Story</p>
+        <h2 className="edubaslikk">My Education</h2>
+        <p>Welcome to the this part of ship, where I share my passion for learning and the transformative impact of knowledge in shaping our lives. Join me on a journey of exploration and enlightenment as we celebrate the beauty of education's never-ending quest.</p>
         <Row>
           {educationItems.map((item, index) => (
             <Col md={4} className="edu" key={index}>

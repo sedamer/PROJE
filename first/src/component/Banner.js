@@ -3,9 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../component/style.css"
 import React from 'react';
 
-import HeaderImg from "../assets/images/moon-g1e7392477_1280.png";
+import HeaderImg from "../assets/images/moon-png-44678.png";
 export const Banner = () => {
-  const toRotate = [" I'm Seda Mercan. Junior Frontend Web Developer, Collage Student "];
+  const toRotate = [" I'm Seda Mercan. Junior Frontend Web Developer."];
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const period = 800; // arbitrary indicate how much time passed
@@ -53,8 +53,8 @@ export const Banner = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">
-              <h1>{`Hi,`}</h1> <span className="wrap">{text}</span>
-              <p>Welcome to My personal- Blog WebSite. Let's Visit!</p>
+              <h1>{`Hello There!`}</h1> <span className="wrap">{text}</span>
+              <p>Greetings and welcome to my world of thoughts and expressions! Let's explore, learn, and grow together!</p>
               <a href="#aboutme">
               <button className="btn" type="button">
                 <strong>Get Start With Me</strong>

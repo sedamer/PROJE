@@ -44,7 +44,7 @@ export const Skills = () => {
                   <Col>
                       <div className="skill-bx">
                           <h2>My Skills</h2>
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                          <p>"Here, you'll find a collection of my skills and passions, reflecting my journey towards growth and self-improvement."</p>
                           <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                               <div className="item">
                               <a href="https://www.w3schools.com/css/" target="_blank">

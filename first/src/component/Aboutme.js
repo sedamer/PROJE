@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import "../component/style.css"
 import React from 'react';
-
+//Know Who I am
 
 export const Aboutme = () => {
   const responsive = {
@@ -32,14 +32,9 @@ export const Aboutme = () => {
           <div className="aboutme-container">
             <div className="aboutme-bx">
               <h2>About Me </h2>
-              <p>
+              <p className="aboutmeyazi">
                 {" "}
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500also the leap into electronic typesetting,
-                remaining essentially unchanged. It was popularised in the 1960s
-                with the release of Letraset sheets containing Lorem Ipsum
-                passages, and more recently with desktop publishing software
-                like Aldus PageMaker including versions of Lorem Ipsum.{" "}
+                Welcome! In this section of our ship offers a glimpse into who I am and my inner world.{" "}
               </p>
             </div>
             
