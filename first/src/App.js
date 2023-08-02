@@ -10,6 +10,7 @@ import { Projects } from "./component/projects";
 import { Blog } from "./component/blog";
 import { Conctact } from "./component/contact";
 import { Footer } from "./component/footer";
+import "animate.css/animate.min.css";
 
 import "./component/style.css";
 

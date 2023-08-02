@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../component/style.css"
 import React from 'react';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 import HeaderImg from "../assets/images/moon-png-44678.png";
 export const Banner = () => {
@@ -52,23 +54,28 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">
-              <h1>{`Hello There!`}</h1> <span className="wrap">{text}</span>
-              <p>Greetings and welcome to my world of thoughts and expressions! Let's explore, learn, and grow together!</p>
-              <a href="#aboutme">
-              <button className="btn" type="button">
-                <strong>Get Start With Me</strong>
-                <div id="container-stars">
-                  <div id="stars"></div>
-                </div>
+            <TrackVisibility>
+            {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>           
+                 <span className="tagline">
+                  <h1>{`Hello There!`}</h1> <span className="wrap">{text}</span>
+                  <p>Greetings and welcome to my world of thoughts and expressions! Let's explore, learn, and grow together!</p>
+                  <a href="#aboutme">
+                  <button className="btn" type="button">
+                    <strong>Get Start With Me</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
 
-                <div id="glow">
-                  <div className="circle"></div>
-                  <div className="circle"></div>
-                </div>
-              </button>
-              </a>
-            </span>
+                    <div id="glow">
+                      <div className="circle"></div>
+                      <div className="circle"></div>
+                    </div>
+                  </button>
+                  </a>
+                </span>
+                </div> }
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={7}>
             <img src={HeaderImg} alt="Header image"></img>

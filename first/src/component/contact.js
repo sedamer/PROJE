@@ -2,7 +2,8 @@ import "../component/style.css";
 import { Col, Row, Container } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import React from 'react';
-
+import 'animate.css'
+import TrackVisibility from "react-on-screen";
 export const Conctact = () => {
   const responsive = {
     //default
@@ -29,11 +30,21 @@ export const Conctact = () => {
         <Row className="iletisim">
           <Col md={6}>
             <h2>HI, NICE TO MEET YOU.</h2>
-          </Col>
-          <Col md={6}>
-            <Form className="form">
+          
+          <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__backInLeft" : ""
+                  }
+                >
               <h3 className="contactme">Get In Touch With Me!</h3>
-
+              </div>
+              )}
+            </TrackVisibility>
+            </Col>
+            <Col md={6}>
+              <Form className="form">
               <Form.Group className="mb-3">
                 <Form.Label className="label">Your Full Name</Form.Label>
                 <Form.Control type="text-con-mesaj"></Form.Control>

@@ -2,6 +2,8 @@ import { Container, Row, Col, ListGroup, ListGroupItem } from "react-bootstrap";
 import "../component/style.css";
 import React from "react";
 import edusvg from  "../assets/images/graduation-cap-icon.svg";
+import 'animate.css';
+import TrackVisibility from "react-on-screen";
 export const Education = () => {
   const responsive = {
     //default
@@ -36,10 +38,24 @@ export const Education = () => {
     },
   ];
   return (
+
     <section className="education" id="education">
       <Container className="education-bx">
-        <h2 className="edubaslikk">My Education</h2>
-        <p>Welcome to the this part of ship, where I share my passion for learning and the transformative impact of knowledge in shaping our lives. Join me on a journey of exploration and enlightenment as we celebrate the beauty of education's never-ending quest.</p>
+      <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__backInLeft" : ""
+                  }
+                >
+            <h2 className="edubaslikk">My Education</h2>
+        </div>
+              )}
+              </TrackVisibility>
+
+      <p>Welcome to the this part of ship, where I share my passion for learning and the transformative impact of knowledge in shaping our lives. Join me on a journey of exploration and enlightenment as we celebrate the beauty of education's never-ending quest.</p>
+
+
         <Row>
           {educationItems.map((item, index) => (
             <Col md={4} className="edu" key={index}>

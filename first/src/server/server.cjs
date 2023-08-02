@@ -122,35 +122,6 @@ const userSchema = new mongoose.Schema({
   app.listen(8000, () => {
       console.log("Server started on port 8000");
     });
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // app.get('/api/users', async(req, res) => { // tüm yazıları getirme
 // //yazıları veritabanından çekme
 // //sonuçları da res.json() veya res.send() ile yanıtla

@@ -1,8 +1,9 @@
 import { Container } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
-import "../component/style.css"
-import React from 'react';
-//Know Who I am
+import "../component/style.css";
+import React from "react";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Aboutme = () => {
   const responsive = {
@@ -29,28 +30,37 @@ export const Aboutme = () => {
       <Container>
         <Row>
           <Col>
-          <div className="aboutme-container">
-            <div className="aboutme-bx">
-              <h2>About Me </h2>
-              <p className="aboutmeyazi">
-                {" "}
-                Welcome! In this section of our ship offers a glimpse into who I am and my inner world.{" "}
-              </p>
-            </div>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__backInLeft" : ""
+                  }
+                >
+                  <div className="aboutme-container">
+                    <div className="aboutme-bx">
+                      <h2>About Me</h2>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </TrackVisibility>
             
-            </div>
-            <Container>
-              <Row>
-                  <Col md={4}></Col>
-                  <Col md={4}></Col>
-                  <Col md={4}></Col>
-              </Row>
-
-            </Container>
-           
+                  <p className="aboutmeyazi">
+                    Welcome! In this section of our ship, I offer a glimpse
+                    into who I am and my inner world.
+                  </p>
+                  <Container>
+                    <Row>
+                      <Col md={4}></Col>
+                      <Col md={4}></Col>
+                      <Col md={4}></Col>
+                    </Row>
+                  </Container>
+                
           </Col>
         </Row>
       </Container>
     </section>
   );
-};
+                }

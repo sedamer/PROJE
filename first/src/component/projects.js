@@ -2,6 +2,8 @@ import { Container, Row, Col, Button, Card, CardImg } from "react-bootstrap";
 import "../component/style.css";
 import kart from "../assets/images/blog.fb8ab7f271a937d5fc01.png";
 import React from 'react';
+import 'animate.css';
+import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const responsive = {
     //default
@@ -26,8 +28,19 @@ export const Projects = () => {
     <section className="projects" id="projects">
       <Container>
         <Row>
+        <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__backInLeft" : ""
+                  }
+                >
           <div>
           <h2 className="baslik">My Projects</h2>
+          </div>
+          </div> )}
+          </TrackVisibility>
+          <div>
           <p className="yazi">Here are a few projects I've worked on recently.</p>
           </div>
        
