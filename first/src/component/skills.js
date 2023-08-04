@@ -43,19 +43,10 @@ export const Skills = () => {
         <Container>
           <Row>
             <Col>
-              <TrackVisibility>
-                {({ isVisible }) => (
-                  <div
-                    className={
-                      isVisible ? "animate__animated animate__backInLeft" : ""
-                    }
-                  >
+              
                     <div className="skill-bx">
                       <h2>My Skills</h2>
                     </div>
-                  </div>
-                )}
-              </TrackVisibility>
   
               <p>"Here, you'll find a collection of my skills and passions, reflecting my journey towards growth and self-improvement."</p>
   

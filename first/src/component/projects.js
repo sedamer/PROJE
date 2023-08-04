@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button, Card, CardImg } from "react-bootstrap";
 import "../component/style.css";
-import kart from "../assets/images/blog.fb8ab7f271a937d5fc01.png";
+import kart from  "../assets/images/blog.fb8ab7f271a937d5fc01.png";
 import React from 'react';
 import 'animate.css';
 import TrackVisibility from "react-on-screen";
@@ -46,12 +46,11 @@ export const Projects = () => {
        
           <Col md={4}>
             <Card className="card">
-              <CardImg  variant="top" src={kart}></CardImg>
+              <CardImg   variant="top" src={kart}></CardImg>
               <Card.Body>
-                <Card.Title className="title"> Project 1 </Card.Title>
+                <Card.Title className="title">Brick Breaker Game </Card.Title>
                 <Card.Text className="text">
-                  since the 1500s,when an unknown printer took a galley of type
-                  and scrambled it to
+                	On OpenGL environment in graphics mode
                 </Card.Text>
                 <a href="https://github.com/sedamer/BrickBreakerGame-OpenGL" target="_blank">
                 <button className="buton-project"> <span>See Codes</span></button>
@@ -61,12 +60,11 @@ export const Projects = () => {
           </Col>
           <Col md={4}>
             <Card className="card">
-              <CardImg variant="top" src={kart}></CardImg>
+              <CardImg  variant="top" src={kart}></CardImg>
               <Card.Body>
-                <Card.Title className="title"> Project 2 </Card.Title>
+                <Card.Title className="title">Brick Breaker Game </Card.Title>
                 <Card.Text className="text">
-                  since the 1500s,when an unknown printer took a galley of type
-                  and scrambled it 
+                  On MinGW environment in graphics mode with WinBGIm 
                 </Card.Text>
                 <a href="https://github.com/sedamer/BrickBreakerGame-WinBGIm" target="_blank">
                 <button className="buton-project"> <span>See Codes</span></button>
@@ -77,12 +75,11 @@ export const Projects = () => {
           </Col>
           <Col md={4}>
             <Card className="card">
-              <CardImg variant="top" src={kart}></CardImg>
+              <CardImg   variant="top" src={kart}></CardImg>
               <Card.Body>
-                <Card.Title className="title"> Project 3 </Card.Title>
+                <Card.Title className="title">Memory Bloom Filter Table </Card.Title>
                 <Card.Text className="text">
-                  since the 1500s,when an unknown printer took a galley of type
-                  and scrambled it 
+               Simple Bloom Filter Table/Data Structure stored in the memory as a binary array
                 </Card.Text>
                 <a href="https://github.com/sedamer/BrickBreakerGame-MinGW" target="_blank">
                 <button className="buton-project"> <span>See Codes</span></button>

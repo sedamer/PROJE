@@ -338,6 +338,13 @@ section.banner {
   text-align: center;
   color: #FFFFFF;
 }
+.aboutmeyazi2{
+  color: #FFFFFF;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+}
 
   /* ************SKILLS CSS************ */
 
@@ -378,13 +385,13 @@ section.banner {
     }
 
     .skill-slider {
-      width: 80%;
-      margin: 0 auto;
+      width: 70%;
+      margin: auto ;
 
     }
     .skill-slider .item img {
       width: 50%;
-      margin: 0 auto 15px auto;
+      margin:80px;
       margin-top: 35%;  
     }
     .item img{
@@ -480,7 +487,7 @@ section.banner {
         width: 18rem;
         padding-top: 25%;  
         background-color: transparent;
-        margin-top: 45px;
+        margin-top: 15px;
         cursor: pointer;
         
         
@@ -553,6 +560,13 @@ section.banner {
         opacity: 1;
         right: 0;
        }
+
+       /* .kartproject{
+        width: 210px;
+        height: 220px;
+        margin: 35px;
+        margin-top :20px;
+       } */
 
           /* ************Blog CSS************ */
             section.blog {
